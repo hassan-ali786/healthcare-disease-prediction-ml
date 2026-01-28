@@ -33,5 +33,5 @@ Random Forest achieved better recall, making it more suitable for healthcare app
 Minimizing false negatives is critical in disease prediction systems.
 
 ## 👨‍💻 Author
-Hassan Ali# healthcare-disease-prediction-ml
-A machine learning project that predicts diabetes risk using real healthcare data. Includes EDA, correlation analysis, KNN and Random Forest models with a focus on medical recall and false negatives
+Hassan Ali
+
