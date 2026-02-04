@@ -63,7 +63,7 @@ Installation and Setup
 Follow the steps below to run the project locally:
 
 1. Clone the repository
-git clone https://github.com/your-username/healthcare-disease-prediction-ml.git
+git clone https://github.com/hassan-ali786/healthcare-disease-prediction-ml.git
 cd healthcare-disease-prediction-ml
 
 2. Create and activate a virtual environment (recommended)
