@@ -1,128 +1,175 @@
-Healthcare Disease Prediction using Machine Learning
-Overview
+# Healthcare Disease Prediction using Machine Learning
 
-This project presents an end-to-end machine learning solution for predicting diabetes risk using real-world healthcare data. The system applies classification techniques with a strong focus on recall to reduce false negatives, which is critical in medical decision-making.
+An end-to-end machine learning project that predicts diabetes risk using real-world healthcare data.  
+The system prioritizes **recall** to reduce false negatives, which is critical in medical decision-making.
 
-Domain
+---
 
-Healthcare | Machine Learning | Classification
+## Domain
 
-Dataset
+Healthcare | Machine Learning | Classification  
 
-Pima Indians Diabetes Dataset
-Source: Kaggle
+---
 
-This dataset contains medical diagnostic measurements for patients and a binary outcome indicating the presence or absence of diabetes.
+## Project Overview
 
-Objective
+This project predicts diabetes risk based on patient medical features and compares the performance of two classification models:
 
-The objective of this project is to predict diabetes risk based on medical features and to compare the performance of K-Nearest Neighbors (KNN) and Random Forest classifiers. Special emphasis is placed on recall, as failing to identify a diabetic patient can have serious health consequences.
+- K-Nearest Neighbors (KNN)  
+- Random Forest Classifier  
 
-Technologies Used
+Special emphasis is placed on **recall** to ensure diabetic patients are correctly identified.
 
-Python
+**Objectives:**  
 
-Pandas
+- Predict diabetes risk from medical features  
+- Minimize false negatives to reduce health risks  
+- Compare KNN and Random Forest performance  
+- Analyze model results from a healthcare perspective  
 
-NumPy
+---
 
-Matplotlib
+## Dataset Information
 
-Seaborn
+**Dataset:** Pima Indians Diabetes Dataset  
+**Source:** Kaggle  
 
-Scikit-learn
+**Features include:**  
 
-Jupyter Notebook
+- Pregnancies  
+- Glucose  
+- Blood Pressure  
+- Skin Thickness  
+- Insulin  
+- BMI  
+- Diabetes Pedigree Function  
+- Age  
 
-Methodology
+**Target:** Outcome (0 = No Diabetes, 1 = Diabetes)
 
-Data loading and validation
+---
 
-Exploratory Data Analysis (EDA) to understand feature distributions
+## Methodology
 
-Correlation analysis to study relationships between medical variables
+1. Data loading and validation  
+2. Exploratory Data Analysis (EDA) to understand feature distributions  
+3. Correlation analysis to study relationships between medical variables  
+4. Feature scaling for distance-based models  
+5. Model training using KNN and Random Forest  
+6. Model evaluation with emphasis on **recall**  
+7. Analysis of false negatives from a healthcare perspective  
 
-Feature scaling for distance-based models
+---
 
-Model training using KNN and Random Forest
+## Results
 
-Model evaluation with emphasis on recall
+- **Random Forest** achieved higher recall than KNN  
+- Reducing false negatives is crucial in healthcare applications  
+- Recall is prioritized over overall accuracy to minimize missed diagnoses  
 
-Analysis of false negatives from a healthcare perspective
+**Medical Insight:**  
+False negatives in healthcare prediction represent missed diagnoses. Minimizing these is essential for timely treatment and patient safety.
 
-Results
+---
 
-The Random Forest classifier achieved a higher recall score than the KNN model. This makes Random Forest more suitable for healthcare applications where minimizing false negatives is more important than maximizing overall accuracy.
+## Project Structure
 
-Medical Insight
-
-In healthcare prediction systems, false negatives represent missed diagnoses. Reducing false negatives is essential to ensure timely treatment and to minimize health risks. Therefore, recall is prioritized over accuracy in this project.
-
-Installation and Setup
-
-Follow the steps below to run the project locally:
-
-1. Clone the repository
-git clone https://github.com/hassan-ali786/healthcare-disease-prediction-ml.git
-cd healthcare-disease-prediction-ml
-
-2. Create and activate a virtual environment (recommended)
-python -m venv venv
-
-
-Windows
-
-venv\Scripts\activate
-
-
-Mac/Linux
-
-source venv/bin/activate
-
-3. Install dependencies
-pip install -r requirements.txt
-
-4. Run the notebook
-jupyter notebook notebooks/Healthcare_Disease_Prediction.ipynb
-
-
-Ensure the dataset file diabetes.csv is placed inside the data/ directory before running the notebook.
-
-Project Structure
+```bash
 healthcare-disease-prediction-ml/
-│
 ├── data/
 │   └── diabetes.csv
-│
 ├── notebooks/
 │   └── Healthcare_Disease_Prediction.ipynb
-│
 ├── images/
-│   └── visualizations and plots
-│
-├── models/
-│   └── saved trained models
-│
+│   └── visualizations_and_plots/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
-Key Skills Demonstrated
+---
 
-Healthcare data analysis
+## Tools & Technology Stack
 
-Feature evaluation and correlation analysis
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)  
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)  
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-007D9C?style=flat&logo=matplotlib&logoColor=white)  
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=flat)  
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)  
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)  
 
-Machine learning classification
+---
 
-Model comparison and evaluation
+## Installation and Setup
 
-Recall and risk-based decision making
+1. Clone the repository:
 
-Professional project structuring
+```bash
+git clone https://github.com/hassan-ali786/healthcare-disease-prediction-ml.git
+cd healthcare-disease-prediction-ml
+```
 
-Author
+2. Create and activate a virtual environment (recommended):
 
-Hassan Ali
-Data Science | Machine Learning | Healthcare Analytics
+**Windows:**
 
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Mac/Linux:**
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Open the notebook:
+
+```bash
+jupyter notebook notebooks/Healthcare_Disease_Prediction.ipynb
+```
+
+> Ensure `diabetes.csv` is placed inside the `data/` directory before running the notebook.
+
+---
+
+## Key Skills Demonstrated
+
+- Healthcare data analysis  
+- Feature evaluation and correlation analysis  
+- Machine learning classification  
+- Model comparison and evaluation  
+- Recall and risk-based decision making  
+- Professional project structuring  
+
+---
+
+## Future Improvements
+
+- Experiment with additional classifiers (XGBoost, LightGBM)  
+- Deploy a web app for real-time diabetes risk prediction  
+- Add probability scores and visualization of predictions  
+- Include more patient features to improve model performance  
+- Store historical predictions in a database for longitudinal analysis  
+
+---
+
+## Author
+
+Hassan Ali  
+Data Science | Machine Learning Engineer
+
+GitHub: https://github.com/hassan-ali786  
+
+---
+
+⭐ Feel free to fork this repository and explore further improvements!
