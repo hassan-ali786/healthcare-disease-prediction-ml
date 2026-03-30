@@ -166,7 +166,7 @@ jupyter notebook notebooks/Healthcare_Disease_Prediction.ipynb
 ## Author
 
 Hassan Ali  
-Data Science | Machine Learning Engineer
+Data Scientist | Machine Learning Engineer
 
 GitHub: https://github.com/hassan-ali786  
 
