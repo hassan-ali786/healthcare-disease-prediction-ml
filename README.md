@@ -1,4 +1,4 @@
-# Healthcare Disease Prediction using Machine Learning
+# Healthcare Disease Prediction 
 
 An end-to-end machine learning project that predicts diabetes risk using real-world healthcare data.  
 The system prioritizes **recall** to reduce false negatives, which is critical in medical decision-making.
