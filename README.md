@@ -80,8 +80,6 @@ healthcare-disease-prediction-ml/
 │   └── diabetes.csv
 ├── notebooks/
 │   └── Healthcare_Disease_Prediction.ipynb
-├── images/
-│   └── visualizations_and_plots/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
