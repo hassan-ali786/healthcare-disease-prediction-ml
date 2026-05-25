@@ -81,7 +81,6 @@ healthcare-disease-prediction-ml/
 ├── notebooks/
 │   └── Healthcare_Disease_Prediction.ipynb
 ├── README.md
-├── 
 └── requirements.txt
 ```
 
