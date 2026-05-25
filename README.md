@@ -82,7 +82,7 @@ healthcare-disease-prediction-ml/
 │   └── Healthcare_Disease_Prediction.ipynb
 ├── README.md
 ├── requirements.txt
-└── .gitignore
+└── 
 ```
 
 ---
