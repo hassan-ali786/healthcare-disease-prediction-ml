@@ -5,6 +5,12 @@ The system prioritizes **recall** to reduce false negatives, which is critical i
 
 ---
 
+## Video Demo
+
+<video src="https://github.com/user-attachments/assets/dcb36ee4-1bd9-4f82-b617-5d3e11db2d25" width="100%" controls></video>
+
+---
+
 ## Domain
 
 Healthcare | Machine Learning | Classification  
